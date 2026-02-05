@@ -1,4 +1,4 @@
-# SatchelFetch CLI Mainscript
+# SatchelTwo CLI Mainscript
 # Take control of your homework!
 # ProjectSCR 2026
 
@@ -6,21 +6,41 @@
 
 import subprocess
 import os
+import sys
+
+#Variables
+
+buildVersion = "PRE-DVT Milestone 1"
 
 #Defining main menu function
 
 def mainmenu():
     print("Main menu:")
     print("1. Assignments")
-    print("2. Setup account")
-    print("3. Exit")
+    print("2. Refresh Calendar / Setup Account")
+    print("3. About")
+    print("4. Exit")
     menuSelect = int(input("Please type the corresponding number for your option choice: "))
-    if menuSelect == 3:
+    if menuSelect == 4:
         exit()
     elif menuSelect == 2:
         os.system("python3 fetch.py")
     elif menuSelect == 1:
         os.system("python3 assignments.py")
+    elif menuSelect == 3:
+        about()
+    else:
+        print("That is not a valid option!")
+        mainmenu()
+
+# Defining the About function
+
+def about():
+    platformVersion = sys.platform()
+    print("SatchelTwo CLI")
+    print(buildVersion)
+    print("Currently running on platform: ", platformVersion)
+    mainmenu()
     
 #Checking for internet connectivity on startup
 

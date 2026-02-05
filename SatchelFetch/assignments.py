@@ -1,4 +1,4 @@
-# SatchelFetch CLI Assignments
+# SatchelTwo CLI Assignments
 # A command line tool for viewing assignments!
 # ProjectSCR 2026
 
@@ -17,9 +17,9 @@ pd.set_option('display.max_colwidth', None)
 calendarlocation = 0
 
 if sys.platform == "win32":
-    calendarlocation = "%APPDATA%/Local/SatchelFetch/Download/cleaned.csv"
+    calendarlocation = "%APPDATA%/Local/SatchelTwo/Download/cleaned.csv"
 elif sys.platform == "darwin" or "linux":
-    calendarlocation = os.path.expanduser("~/Satchelfetch/Download/cleaned.csv")
+    calendarlocation = os.path.expanduser("~/SatchelTwo/Download/cleaned.csv")
 else:
     raise Exception("Sorry, whatever obscure platform you're using is not supported!")
 

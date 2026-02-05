@@ -1,4 +1,4 @@
-# SatchelFetch CLI Fetcher
+# SatchelTwo CLI Fetcher
 # A command line based tool for importing SatchelOne calendars into spreadsheets
 # ProjectSCR 2026
 
@@ -51,19 +51,19 @@ def checkConfig():
 #Setting directories for specific platforms (Linux and MacOS share the same file structure so they're grouped together)
 
 if sys.platform == "win32":
-    os.system("mkdir %APPDATA%/Local/SatchelFetch/")
-    os.system("mkdir %APPDATA%/Local/SatchelFetch/Download/")
-    downloadlocation = "%APPDATA%/Local/SatchelFetch/Download/icalendars.ics"
-    calendarlocation = "%APPDATA%/Local/SatchelFetch/Download/icalendars.csv"
-    downloadfolder = "%APPDATA%/Local/SatchelFetch/Download/"
-    configlocation = "%APPDATA%/Local/SatchelFetch/config.txt"
+    os.system("mkdir %APPDATA%/Local/SatchelTwo/")
+    os.system("mkdir %APPDATA%/Local/SatchelTwo/Download/")
+    downloadlocation = "%APPDATA%/Local/SatchelTwo/Download/icalendars.ics"
+    calendarlocation = "%APPDATA%/Local/SatchelTwo/Download/icalendars.csv"
+    downloadfolder = "%APPDATA%/Local/SatchelTwo/Download/"
+    configlocation = "%APPDATA%/Local/SatchelTwo/config.txt"
 elif sys.platform == "darwin" or "linux":
-    os.system("mkdir ~/Satchelfetch/")
-    os.system("mkdir ~/Satchelfetch/Download/")
-    downloadlocation = os.path.expanduser("~/Satchelfetch/Download/icalendars.ics")
-    calendarlocation = os.path.expanduser("~/Satchelfetch/Download/icalendars.csv")
-    downloadfolder = os.path.expanduser("~/Satchelfetch/Download/")
-    configlocation = os.path.expanduser("~/Satchelfetch/config.txt")
+    os.system("mkdir ~/SatchelTwo/")
+    os.system("mkdir ~/SatchelTwo/Download/")
+    downloadlocation = os.path.expanduser("~/SatchelTwo/Download/icalendars.ics")
+    calendarlocation = os.path.expanduser("~/SatchelTwo/Download/icalendars.csv")
+    downloadfolder = os.path.expanduser("~/SatchelTwo/Download/")
+    configlocation = os.path.expanduser("~/SatchelTwo/config.txt")
 else:
     raise Exception("Sorry, whatever obscure platform you're using is not supported!") #Throwing an error for those who try running SatchelTwo on their... idk... Wii U?
 
