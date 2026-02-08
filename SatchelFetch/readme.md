@@ -1,4 +1,4 @@
-# SatchelFetch
+# SatchelTwo CLI
 ## The bare minimum for checking your homework!
 
 ### So... What is this?
