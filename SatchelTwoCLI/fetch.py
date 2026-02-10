@@ -16,6 +16,9 @@ import webbrowser
 import time
 import pandas as pd
 from pathlib import Path
+import warnings
+
+warnings.filterwarnings('ignore')  # Suppress all warnings
 
 #Setting up an SSL HTTPS context so it doesn't throw security errors
 
@@ -61,8 +64,8 @@ def checkConfig():
 
 if sys.platform == "win32":
     home = Path.home()
-    os.system('mkdir "%userprofile%\Documents\SatchelTwo"')
-    os.system('mkdir "%userprofile%\Documents\SatchelTwo\Download"')
+    os.system(r'mkdir "%userprofile%\Documents\SatchelTwo"')
+    os.system(r'mkdir "%userprofile%\Documents\SatchelTwo\Download"')
     downloadlocation = home / "Documents" / "SatchelTwo" / "Download" / "icalendars.ics"
     calendarlocation = home / "Documents" / "SatchelTwo" / "Download" / "icalendars.csv"
     cleanedlocation = home / "Documents" / "SatchelTwo" / "Download" / "cleaned.csv"

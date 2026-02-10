@@ -8,6 +8,9 @@ import pandas as pd
 import sys
 import os
 from pathlib import Path
+import warnings
+
+warnings.filterwarnings('ignore')  # Suppress all warnings
 
 #Configuring Pandas to use the full width of the window
 

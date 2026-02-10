@@ -8,10 +8,13 @@ import subprocess
 import os
 import sys
 from pathlib import Path
+import warnings
+
+warnings.filterwarnings('ignore')  # Suppress all warnings
 
 #Variables
 
-buildVersion = "Milestone 1.1"
+buildVersion = "Milestone 1.2"
 
 #Defining main menu function
 
@@ -49,6 +52,11 @@ def mainmenu():
 # Defining the About function
 
 def about():
+    print(r"  _________       __         .__           ._____________              ")
+    print(r" /   _____/____ _/  |_  ____ |  |__   ____ |  \__    ___/_  _  ______  ")
+    print(r" \_____  \\__  \\   __\/ ___\|  |  \_/ __ \|  | |    |  \ \/ \/ /  _ \ ")
+    print(r" /        \/ __ \|  | \  \___|   Y  \  ___/|  |_|    |   \     (  <_> )")
+    print(r"/_______/ (____  /__|  \___  >___|  /\___  >____/____|    \/\_/ \____/ ")
     platformVersion = sys.platform
     print("")
     print("SatchelTwo CLI")
@@ -56,7 +64,7 @@ def about():
     print("Currently running on platform: ", platformVersion)
     print("")
     mainmenu()
-    
+
 #Checking for internet connectivity on startup
 
 result = subprocess.run(
