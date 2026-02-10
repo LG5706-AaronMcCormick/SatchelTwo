@@ -18,6 +18,9 @@ For Firefox, this is pretty simple. Well, to an extent.
 6. Do a single left click on that and it should bring up a side panel. Look near the top of it for some text like: https://api.satchelone.com/api/students/...
 7. In that URL, there should be some numbers after students, followed by a question mark.
 8. Congratulations! This is your student token! Save it somewhere convenient so you can come back to it later!
+9. Next, we need to get your authentication. Scroll down the side pane until you see "Request headers" and look for "Authentication:". It should have a value that ends in an equals symbol.
+10. Copy that whole value (Including equals!) out of there and save it somewhere safe, preferably with your student token. This is your authentication key and will be neccesary to use the SatchelOneAPI.
+11. Were all set! You now have the neccesary data to use the SatchelOne API!
 
 ### Google Chrome / Chromium
 
