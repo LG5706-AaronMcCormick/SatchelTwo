@@ -68,7 +68,7 @@ if sys.platform == "win32":
     cleanedlocation = home / "Documents" / "SatchelTwo" / "Download" / "cleaned.csv"
     downloadfolder = home / "Documents" / "SatchelTwo" / "Download"
     configlocation = home / "Documents" / "SatchelTwo" / "config.txt"
-elif sys.platform == "darwin" or "linux":
+elif sys.platform == "darwin" or sys.platform ==  "linux":
     os.system("mkdir ~/SatchelTwo/")
     os.system("mkdir ~/SatchelTwo/Download/")
     downloadlocation = os.path.expanduser("~/SatchelTwo/Download/icalendars.ics")

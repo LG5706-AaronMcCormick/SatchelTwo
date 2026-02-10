@@ -22,7 +22,7 @@ calendarlocation = 0
 
 if sys.platform == "win32":
     calendarlocation = home / "Documents" / "SatchelTwo" / "Download" / "cleaned.csv"
-elif sys.platform == "darwin" or "linux":
+elif sys.platform == "darwin" or sys.platform == "linux":
     calendarlocation = os.path.expanduser("~/SatchelTwo/Download/cleaned.csv")
 else:
     raise Exception("Sorry, whatever obscure platform you're using is not supported!")
