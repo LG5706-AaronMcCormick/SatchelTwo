@@ -9,12 +9,13 @@ import os
 import sys
 from pathlib import Path
 import warnings
+import webbrowser
 
 warnings.filterwarnings('ignore')  # Suppress all warnings
 
 #Variables
 
-buildVersion = "Milestone 1.2"
+buildVersion = "Milestone 1.3"
 
 #Defining main menu function
 
@@ -24,7 +25,8 @@ def mainmenu():
     print("2. Refresh Calendar / Setup Account")
     print("3. About")
     print("4. Token Setup (BETA)")
-    print("5. Exit")
+    print("5. Check out the new GUI!")
+    print("6. Exit")
     menuSelect = int(input("Please type the corresponding number for your option choice: "))
     if menuSelect == 4:
         if sys.platform == "win32":
@@ -43,8 +45,11 @@ def mainmenu():
             os.system("python3 assignments.py")
     elif menuSelect == 3:
         about()
-    elif menuSelect == 5:
+    elif menuSelect == 6:
         exit()
+    elif menuSelect == 5:
+        url = "https://github.com/LG5706-AaronMcCormick/SatchelTwo/discussions/1"
+        webbrowser.open(url, new=0, autoraise=True)
     else:
         print("That is not a valid option!")
         mainmenu()
