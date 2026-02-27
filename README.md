@@ -1,4 +1,5 @@
 <img width="128" height="80" alt="logo128x80white" src="https://github.com/user-attachments/assets/c5010b9e-68e8-4261-a5cb-708625339f81" />
+
 ## Making checking your homework... Slightly less infuriating!
 
 ### CURRENT STAGE: Milestone 1.3
