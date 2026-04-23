@@ -1,6 +1,6 @@
 # The Satchel:Two Project
 
-<img width="640" height="400" alt="fullres Large" src="https://github.com/user-attachments/assets/1ed1a2ed-6c07-4cd7-abad-b36f93689c39" />
+<img width="320" height="200" alt="fullres Large" src="https://github.com/user-attachments/assets/1ed1a2ed-6c07-4cd7-abad-b36f93689c39" />
 
 ## Making checking your homework... Slightly less infuriating!
 
