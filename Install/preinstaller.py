@@ -35,20 +35,22 @@ else:
     archOK = True
 
 # OS Check: Doesn't really matter as long as it's 64-bit and runs Python 3.13.5
-if sys.platform != "win32":
+if sys.platform == "win32":
     if arch == "arm64" and sys.platform == "win32":
         osOK = False
         archOK = False
     else:
-        if sys.platform != "darwin":
-            if sys.platform != "linux":
-                osOK = True
-            else:
-                osOK = True
-        else:
-            osOK = False
-else:
+        archOK = False
+        osOK = True
+elif sys.platform == "darwin":
+    archOK = True
     osOK = True
+elif sys.platform == "linux":
+    archOK = True
+    osOK = True
+else:
+    osOK = False
+    archOK = False
 
 # Python version check: Checks to see if Python is 3.13.5 or newer
 pyver = list(platform.python_version_tuple())
