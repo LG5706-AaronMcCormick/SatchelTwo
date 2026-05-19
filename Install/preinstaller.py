@@ -42,11 +42,11 @@ if sys.platform != "win32":
     else:
         if sys.platform != "darwin":
             if sys.platform != "linux":
-                osOK = False
+                osOK = True
             else:
                 osOK = True
         else:
-            osOK = True
+            osOK = False
 else:
     osOK = True
 
