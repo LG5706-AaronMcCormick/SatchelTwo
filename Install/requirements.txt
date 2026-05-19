@@ -1,0 +1,10 @@
+customtkinter
+icalendar
+pillow
+pandas
+frontend
+pymupdf
+static
+starlette
+numpy
+requests
